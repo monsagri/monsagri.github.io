@@ -1,0 +1,194 @@
+/*background color = #fafafa*/
+/*button blue = #3897f0*/
+/*border color = #e6e6e6*/
+/*footer link color = #003569*/
+/*text grey color = #999*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background color = #fafafa
+}
+
+.hide {
+  display: none;
+}
+body, input {
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin-right: 0;
+}
+.phonehero  {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+ }
+.signup {
+  height: 70%;
+  width: 350px;
+  margin: auto;
+  border: 1px solid #e6e6e6;
+}
+
+.signup p {
+  width: 80%;
+  margin: 10px auto 20px auto;
+}
+.instagram {
+  margin: 10% auto;
+  display: block;
+}
+
+.loginfacebook {
+  display: block;
+  margin: auto;
+  color: white;
+  text-align: center;
+  background-color: #3897f0;
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-decoration: none;
+  width: 80%;
+
+
+}
+
+p {
+  text-align: center;
+  font-weight: 600;
+  color: #999;
+}
+.login {
+  height: 10%;
+  width: 350px;
+  margin-top: 2%;
+  border: 1px solid #e6e6e6;
+}
+
+.signupform {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.signupform input {
+  padding: 4px 8px;
+  margin: 1px 0;
+}
+
+.signupform button {
+  color: white;
+  text-align: center;
+  background-color: #3897f0;
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+.login {
+  line-height: 100%;
+  max-width: 350px;
+  margin: 2% auto auto auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.login p {
+  font-weight: normal;
+  color: black;
+}
+
+.storelinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.storelinks p{
+  flex-basis: 100%;
+}
+
+.storelinks img {
+  margin: 0 5px 20px 0;
+}
+
+footer {
+  max-width: 960px;
+}
+
+footer ul {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer li {
+  text-decoration: none;
+  display: inline;
+  text-transform: uppercase;
+  color: #003569;
+  font-weight: bold;
+  padding: 0 4px;
+  margin: auto;
+
+}
+
+footer p {
+  margin-top: 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media only screen and (min-width:600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  .storelinks {
+    align-self: flex-end;
+  }
+
+  .hide {
+    display: inline-block;
+  }
+
+  .hero {
+    height: auto;
+  }
+  .desktophero {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+  .copyright {
+    float:right;
+  }
+
+  footer ul {
+    float: left;
+  }
+
+  .phonehero {
+    height: auto;
+  }
+}

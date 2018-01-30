@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+/* add your sass here... */
+.navbar {
+  background-color: #ffd230; }
+  .navbar .container {
+    flex-direction: column; }
+    .navbar .container .navbar-brand {
+      margin-left: 1.5rem; }
+      .navbar .container .navbar-brand .title {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        margin: auto 0; }
+    .navbar .container .navbar-menu {
+      margin-left: 1.5rem;
+      border-top: 1px solid rgba(18, 18, 18, 0.2); }
+      .navbar .container .navbar-menu .navbar-item {
+        border-right: 1px solid rgba(18, 18, 18, 0.2);
+        padding: 0.25rem 0.5rem; }
+        .navbar .container .navbar-menu .navbar-item:hover {
+          color: black;
+          border-bottom: 4px solid #121212;
+          background-color: #ffd230;
+          padding-bottom: 0; }
+        .navbar .container .navbar-menu .navbar-item:last-child {
+          border-right: none; }
+
+.column img {
+  flex-grow: 1;
+  width: 100%; }
+.column h2 {
+  font-weight: bold; }
+.column h3 {
+  width: 100%;
+  font-weight: bold; }
+
+.columns {
+  display: flex;
+  flex-wrap: wrap; }
+
+.button {
+  background-color: #ffd230;
+  border: none; }
+
+/*# sourceMappingURL=style.css.map */
