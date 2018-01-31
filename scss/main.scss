@@ -1,14 +1,19 @@
-// main {
-//   .container {
-//     .hero {
-//       article {
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         h3 {
-//           flex-basis: 100%;
-//         }
-//       }
-//     }
-//   }
-// }
+main {
+  .container {
+    .hero {
+      article {
+        div {
+          img {
+            border: 2px solid grey;
+            border-radius: 3px;
+
+            }
+          }
+      }
+    }
+  }
+}
+.projectdescription {
+  align-content: space-between;
+  justify-content: space-between;
+}
