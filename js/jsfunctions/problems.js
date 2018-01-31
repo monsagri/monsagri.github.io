@@ -24,7 +24,7 @@ function numberReverse(number) {
 // write a function to check if a word or phrase is a palindrome returning a boolean
 // eg. palindromeCheck('dad') => true, palindrome('nonsense') => false
 function palindromeCheck(string) {
-  // return string.replace(/ /g,'') === string.replace(/ /g,'').split('').reverse().join('');
+  return string.replace(/ /g,'') === string.replace(/ /g,'').split('').reverse().join('');
 }
 
 // write a function that returns the letters of a word or phrase in alphabetical order case insensitive
