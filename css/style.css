@@ -1,6 +1,8 @@
-main .container .hero article div img {
-  border: 2px solid grey;
-  border-radius: 3px; }
+main .container .hero article div {
+  flex-direction: row; }
+  main .container .hero article div img {
+    border: 2px solid grey;
+    border-radius: 3px; }
 
 .projectdescription {
   align-content: space-between;

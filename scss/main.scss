@@ -3,6 +3,7 @@ main {
     .hero {
       article {
         div {
+          flex-direction: row;
           img {
             border: 2px solid grey;
             border-radius: 3px;
