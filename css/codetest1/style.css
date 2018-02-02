@@ -1,0 +1,36 @@
+body main {
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  body main section {
+    margin-top: 10%;
+    height: 250px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center; }
+    body main section .progresscontainer {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      align-items: center; }
+      body main section .progresscontainer .progressbar {
+        position: relative; }
+        body main section .progresscontainer .progressbar p {
+          margin: 0;
+          position: absolute;
+          left: 39%; }
+      body main section .progresscontainer .goal {
+        border: 1px solid black;
+        padding: 10px 15px; }
+        body main section .progresscontainer .goal p {
+          margin: 0; }
+    body main section .buttoncontainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      body main section .buttoncontainer .button {
+        border: 1px solid black;
+        width: 20%; }
+
+/*# sourceMappingURL=style.css.map */
