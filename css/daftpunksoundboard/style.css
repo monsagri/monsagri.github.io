@@ -1,0 +1,26 @@
+html {
+  background-color: black; }
+  html body header h1 {
+    color: red;
+    font-size: 6rem;
+    text-align: center; }
+  html body main .container {
+    margin-top: 50px; }
+    html body main .container div div {
+      display: flex; }
+      html body main .container div div .player {
+        border: 1px black solid;
+        background-color: red;
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        align-content: center;
+        justify-content: center; }
+        html body main .container div div .player p {
+          font-weight: 700; }
+
+.playercontainer {
+  flex-direction: row; }
+
+/*# sourceMappingURL=style.css.map */
