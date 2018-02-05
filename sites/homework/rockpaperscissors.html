@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/rockpaperscissors/animate.css">
+    <link rel="stylesheet" href="/css/rockpaperscissors/style.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <audio src=""></audio>
+    <main>
+      <section class="game">
+        <div class="gamecontainer">
+          <div class="gamescore">
+            <div class="scoreboard">
+              <div class="playerscore">
+                <h3>Player Score</h3>
+                <p>0</p>
+              </div>
+              <div class="aiscore">
+                <h3>Game Score</h3>
+                <p>0</p>
+              </div>
+            </div>
+            <p class="message">Good luck!</p>
+          </div>
+          <div class="gameboard">
+            <img class="base" id="base" src="/images/rockpaperscissors/rps_base.png" alt="An image displaying the rules of rock paper scissors">
+            <img class="hidden choice" src="/images/rockpaperscissors/" alt="Player 1 choice">
+            <img class="hidden choice" src="/images/rockpaperscissors/" alt="Player 2 choice">
+          </div>
+          <div class="gamecontrols">
+            <img class="selector" src="/images/rockpaperscissors/rock.svg" alt="rock">
+            <img class="selector"  src="/images/rockpaperscissors/paper.svg" alt="paper">
+            <img class="selector" src="/images/rockpaperscissors/scissors.svg"   alt="scissors">
+            <img class="selector" src="/images/rockpaperscissors/lizard.svg"   alt="lizard">
+            <img class="selector" src="/images/rockpaperscissors/spock.svg"   alt="spock">
+          </div>
+          <div class="gameoptions">
+            <button class="option reset" type="button" name="button">Reset Score</button>
+            <button class="option"  type="button" name="button">Turn off sounds</button>
+            <button class="option"  type="button" name="button">Tell a friend</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/rockpaperscissors/main.js" charset="utf-8"></script>
+  </body>
+</html>
