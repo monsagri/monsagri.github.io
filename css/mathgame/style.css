@@ -1,0 +1,56 @@
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 500; }
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+    body main * {
+      margin: 10px 0; }
+    body main .containertimer {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body main .containertimer span {
+        font-size: 3rem;
+        font-weight: 600;
+        color: white; }
+    body main .start {
+      border: 1px solid dodgerBlue;
+      color: dodgerBlue;
+      padding: 5px; }
+    body main .repeat {
+      border: 1px solid dodgerBlue;
+      color: dodgerBlue;
+      padding: 5px; }
+
+.hide {
+  display: none; }
+
+.red {
+  background-color: red; }
+
+.blue {
+  background-color: dodgerBlue; }
+
+.ringing {
+  animation: shake 0.5s infinite; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px); }
+  20%, 80% {
+    transform: translateX(2px); }
+  30%, 50%, 70% {
+    transform: translateX(-4px); }
+  40%, 60% {
+    transform: translateX(4px); } }
+
+/*# sourceMappingURL=style.css.map */
