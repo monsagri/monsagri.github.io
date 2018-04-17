@@ -1,0 +1,68 @@
+body {
+  color: #BFC0C0;
+}
+nav {
+  background-color: #4F5D75;
+  color: #BFC0C0;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav-logo {
+    margin-left: 2rem;
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #BFC0C0;
+    }
+  }
+  .nav-menu {
+    display: flex;
+    .nav-menu__item {
+      padding: 0.5rem;
+      text-decoration: none;
+      color: #BFC0C0;
+    }
+  }
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/hero1.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  header {
+    h1 {
+      font-size: 4rem;
+    }
+    h2{
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.skills {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/hero2.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.15rem #2D3142 solid;
+  .skills-container {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+.parallax-full {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
