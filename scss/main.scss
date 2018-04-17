@@ -24,6 +24,7 @@ nav {
       padding: 0.5rem;
       text-decoration: none;
       color: #BFC0C0;
+      font-weight: bold;
     }
   }
 }
@@ -44,17 +45,63 @@ nav {
   }
 }
 
+.about {
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/hero3-min.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.15rem #2D3142 solid;
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    .about-container__picture {
+      background-image: url('../assets/images/monsagri-min_scaled.jpg');
+      background-repeat: no-repeat;
+      // background-size: cover;
+      // background-position: 1px;
+      width: 300px;
+      height: 400px;
+      border-radius: 50%;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
 .skills {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/hero2-min.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/hero5-min.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 0.15rem #2D3142 solid;
   .skills-container {
     h2 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bold;
+      margin-bottom: 2rem;
     }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      h2 {
+        font-size: 2.5rem;
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+      }
+      i {
+        font-size: 5rem;
+        flex-basis: 33%;
+        margin-bottom: 1rem;
+      }
+    }
+
   }
 }
 
