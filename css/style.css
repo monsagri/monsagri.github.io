@@ -1,5 +1,6 @@
 body {
-  color: #BFC0C0; }
+  color: #BFC0C0;
+  font-family: 'Source Code Pro', monospace; }
 
 nav {
   background-color: #4F5D75;
@@ -28,7 +29,8 @@ nav {
   justify-content: center;
   align-items: center; }
   .hero header h1 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    font-weight: bold; }
   .hero header h2 {
     font-size: 2.5rem; }
 
