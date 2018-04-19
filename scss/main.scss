@@ -50,6 +50,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   header {
     h1 {
       font-size: 4rem;
@@ -57,6 +58,14 @@ nav {
     }
     h2{
       font-size: 2.5rem;
+    }
+  }
+  .chevronDiv {
+    position: relative;
+    top: 20vh;
+    cursor: pointer;
+    svg {
+      font-size: 2rem;
     }
   }
 }
@@ -140,6 +149,48 @@ nav {
       }
     }
 
+  }
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  .project4 {
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    .project4__image {
+      height:55%;
+      width:90%;
+    }
+    .project4__description{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .project4__tech{
+      display: flex;
+      flex-wrap: wrap;
+
+      h3 {
+        flex-basis: 100%;
+      }
+      i {
+        font-size: 1.25rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+      }
+    }
   }
 }
 

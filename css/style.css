@@ -28,12 +28,19 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/hero1-min.jpg");
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .hero header h1 {
     font-size: 4rem;
     font-weight: bold; }
   .hero header h2 {
     font-size: 2.5rem; }
+  .hero .chevronDiv {
+    position: relative;
+    top: 20vh;
+    cursor: pointer; }
+    .hero .chevronDiv svg {
+      font-size: 2rem; }
 
 .about {
   display: flex;
@@ -99,6 +106,38 @@ nav {
         .skills .skills-container div i {
           font-size: 3.5rem;
           margin-bottom: 0.75rem; } }
+
+.projects {
+  display: flex;
+  align-items: center; }
+  .projects .project4 {
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; }
+    .projects .project4 .project4__image {
+      height: 55%;
+      width: 90%; }
+    .projects .project4 .project4__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .projects .project4 .project4__description h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem; }
+    .projects .project4 .project4__tech {
+      display: flex;
+      flex-wrap: wrap; }
+      .projects .project4 .project4__tech h3 {
+        flex-basis: 100%; }
+      .projects .project4 .project4__tech i {
+        font-size: 1.25rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem; }
 
 footer {
   height: 15vh;

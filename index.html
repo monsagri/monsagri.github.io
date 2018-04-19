@@ -18,6 +18,8 @@
     <!-- Loading Typeit -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.9.0/typeit.min.js">
     </script>
+    <!-- Loading jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- used only for offline, delete late -->
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="/js/app.js"></script>
@@ -40,6 +42,9 @@
         <!-- Might want to consider fallback for users without JS enabled -->
         <h2 class="hero-header__subtitle"></h2>
       </header>
+      <div class="chevronDiv" id="chevronDiv">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
     <section class="about parallax-full">
       <div class="about-container container">
@@ -78,6 +83,32 @@
             <i class="devicon-slack-plain-wordmark"></i>
             <i class="devicon-trello-plain-wordmark"></i>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects parallax-full">
+      <div class="container">
+        <!-- Do I make this a slideshow type thing?  -->
+        <div class="project4">
+          <div class="project4__description">
+            <h2>MoneyMapper - A MERN-Stack App</h2>
+            <p>MoneyMapper is a money management app providing both budgeting and data visualization on spending.</p>
+            <div class="project4__tech">
+              <h3>Skills used:</h3>
+              <i class="devicon-nodejs-plain-wordmark"></i>
+              <i class="devicon-express-original-wordmark"></i>
+              <i class="devicon-mongodb-plain-wordmark"></i>
+              <i class="devicon-html5-plain-wordmark"></i>
+              <i class="devicon-css3-plain-wordmark"></i>
+              <i class="devicon-sass-original"></i>
+              <i class="devicon-javascript-plain"></i>
+              <i class="devicon-react-plain-wordmark"></i>
+              <i class="devicon-webpack-plain-wordmark"></i>
+              <i class="devicon-mocha-plain"></i>
+              <i class="devicon-jasmine-plain-wordmark"></i>
+            </div>
+          </div>
+          <img class="project4__image" src="assets/images/moneymapper1.png" alt="Screenshot of MoneyMapper">
         </div>
       </div>
     </section>
