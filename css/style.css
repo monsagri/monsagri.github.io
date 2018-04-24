@@ -110,34 +110,39 @@ nav {
 .projects {
   display: flex;
   align-items: center; }
-  .projects .project4 {
-    width: 95vw;
-    height: 95vh;
+  .projects .project {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 1rem; }
-    .projects .project4 .project4__image {
-      height: 55%;
-      width: 90%; }
-    .projects .project4 .project4__description {
+    .projects .project .project__image {
+      height: 60%;
+      width: auto; }
+    .projects .project .project__description {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center; }
-      .projects .project4 .project4__description h2 {
+      .projects .project .project__description h2 {
         font-size: 2rem;
-        margin-bottom: 1.5rem; }
-    .projects .project4 .project4__tech {
+        margin-bottom: 1rem; }
+    .projects .project .project__tech {
+      width: 80%;
       display: flex;
-      flex-wrap: wrap; }
-      .projects .project4 .project4__tech h3 {
-        flex-basis: 100%; }
-      .projects .project4 .project4__tech i {
-        font-size: 1.25rem;
-        padding-left: 0.25rem;
-        padding-right: 0.25rem; }
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow: hidden; }
+      .projects .project .project__tech h3 {
+        flex-basis: 100%;
+        font-size: 2rem; }
+      .projects .project .project__tech i {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; }
 
 footer {
   height: 15vh;
@@ -164,5 +169,8 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center; }
+
+.hidden {
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */

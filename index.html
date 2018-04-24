@@ -50,7 +50,11 @@
       <div class="about-container container">
         <div class="about-container__picture"></div>
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="about-container__bio">
+          <p>I have always been very interested in technology and how it shapes our world. One of favourite childhood memories is turning on a computer I built with my dad for the first time. After moving to London late in 2016, I met a lot of people working in the Web Development Industry and was convinced to try and turn that hobby and enjoyment into a career.</p>
+          <p>I attended a Web Development Bootcamp aimed at Full Stack Development at General Assembly London this January and am hoping to apply what I have learned there in practice. I have always been driven to understand my world on a conceptual level and use that understanding to solve complex problems. Web Development lets me do just that while continuously learning.</p>
+          <p>When I am not fiddling with a side project I enjoy cycling - both road and mountain biking -, squash and reading.</p>
+        </div>
       </div>
     </section>
     <section class="skills parallax-full">
@@ -69,6 +73,7 @@
             <i class="devicon-css3-plain-wordmark"></i>
             <i class="devicon-sass-original"></i>
             <i class="devicon-javascript-plain"></i>
+            <i class="devicon-jquery-plain-wordmark"></i>
             <i class="devicon-react-plain-wordmark"></i>
             <i class="devicon-angularjs-plain-wordmark"></i>
             <i class="devicon-webpack-plain-wordmark"></i>
@@ -87,30 +92,86 @@
       </div>
     </section>
     <section class="projects parallax-full">
-      <div class="container">
+      <!-- <div class="container"> -->
         <!-- Do I make this a slideshow type thing?  -->
-        <div class="project4">
-          <div class="project4__description">
+        <div class="project" id="project4">
+          <div class="project__description">
             <h2>MoneyMapper - A MERN-Stack App</h2>
-            <p>MoneyMapper is a money management app providing both budgeting and data visualization on spending.</p>
-            <div class="project4__tech">
+            <p>Moneymapper is my final project for WDI, built using the MERN stack. It is a money-management app, intended to help users track spending through data visualization and create monthly budgets. Creating MoneyMapper was a challenge, as we had not dealt with data visualization during the immersive course. Finding the right library in Victory and familiarising myself with it was a fun challenge and reinforced my enjoyment of learning about coding.</p>
+            <div class="project__tech">
               <h3>Skills used:</h3>
-              <i class="devicon-nodejs-plain-wordmark"></i>
-              <i class="devicon-express-original-wordmark"></i>
-              <i class="devicon-mongodb-plain-wordmark"></i>
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-sass-original"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-react-plain-wordmark"></i>
-              <i class="devicon-webpack-plain-wordmark"></i>
-              <i class="devicon-mocha-plain"></i>
-              <i class="devicon-jasmine-plain-wordmark"></i>
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-react-plain-wordmark colored"></i>
+              <i class="devicon-webpack-plain-wordmark colored"></i>
+              <i class="devicon-nodejs-plain-wordmark colored"></i>
+              <i class="devicon-express-original-wordmark colored"></i>
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+              <i class="devicon-mocha-plain colored"></i>
+              <i class="devicon-jasmine-plain-wordmark colored"></i>
             </div>
           </div>
-          <img class="project4__image" src="assets/images/moneymapper1.png" alt="Screenshot of MoneyMapper">
+          <img class="project__image" src="assets/images/moneymapper1.png" alt="Screenshot of MoneyMapper">
         </div>
-      </div>
+        <div class="project hidden" id="project3">
+          <div class="project__description">
+            <h2>Star Gazer - A MEAN-Stack App</h2>
+            <p>Star Gazer is an app aimed at amateur astronomers and anyone with an interest in stargazing. It uses the Nasa NeoAsteroids and some other APIs to create a list of interesting celestial events. This data is cross referenced with weather data from the Dark Sky API to provide users with a list of events that will guarantee good weather and visiblity. It also hosts a list of good locations and allows users to interact and rate the various locations..</p>
+            <div class="project__tech">
+              <h3>Skills used:</h3>
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-angularjs-plain-wordmark colored"></i>
+              <i class="devicon-webpack-plain-wordmark colored"></i>
+              <i class="devicon-nodejs-plain-wordmark colored"></i>
+              <i class="devicon-express-original-wordmark colored"></i>
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+              <i class="devicon-mocha-plain colored"></i>
+              <i class="devicon-jasmine-plain-wordmark colored"></i>
+            </div>
+          </div>
+          <img class="project__image" src="assets/images/stargazer1.png" alt="Screenshot of Star Gazer">
+        </div>
+        <div class="project hidden" id="project2">
+          <div class="project__description">
+            <h2>Keepin' it reel - Express App</h2>
+            <p>We started our second project after just a week of intensive work on Node.js. The brief was to build a Node.js app using the Express framework to allow users to review something.
+            This was a great opportunity to build something that I think is actually missing in London, which is a review site for Arthouse cinemas.</p>
+            <div class="project__tech">
+              <h3>Skills used:</h3>
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-webpack-plain-wordmark colored"></i>
+              <i class="devicon-nodejs-plain-wordmark colored"></i>
+              <i class="devicon-express-original-wordmark colored"></i>
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+            </div>
+          </div>
+          <img class="project__image" src="assets/images/keepin-it-reel1.jpg" alt="Screenshot of Keepin' it reel">
+        </div>
+        <div class="project hidden" id="project1">
+          <div class="project__description">
+            <h2>Delve Deep - JavaScript Game</h2>
+            <p>Our first project at GA after 3 weeks of studying was building a game. This was the perfect introduction to actual coding work for me, since it combined two of my favourite things. As a kid I had a certain obsession with Roguelike type games and I knew that I wanted to make my own as soon as I heard of the projects focus.
+            I leant heavily on jQuery to build a grid based maze for the game and created JavaScript classes to manage player and NPC movement, combat and inventory.</p>
+            <div class="project__tech">
+              <h3>Skills used:</h3>
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-jquery-plain-wordmark colored"></i>
+            </div>
+          </div>
+          <img class="project__image" src="assets/images/delve-deep1.png" alt="Screenshot of Delve Deep">
+        </div>
+      <!-- </div> -->
     </section>
     <footer>
       <div class="footer__linkcontainer">
