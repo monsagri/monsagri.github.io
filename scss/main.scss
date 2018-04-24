@@ -155,7 +155,22 @@ nav {
 .projects {
   display: flex;
   align-items: center;
+  .previosBtn {
+    padding-left: 25px;
+  }
+  .nextBtn {
+    padding-right: 25px;
+  }
+  svg{
+    font-size: 3rem;
+    & .fa-chevron-left {
+      float: left;
+    }
+    & .fa-chevron-right {
+      float: right;
+    }
 
+  }
   .project {
     width: 100%;
     height: 100%;
@@ -164,9 +179,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    .project__image {
-      height: 60%;
-      width:auto;
+    a {
+      text-decoration: none;
+
+      img{
+        height: 50vh;
+        width:auto;
+        @include for-tablet-portrait {
+          height: 30vh;
+        }
+        @include for-phone-only {
+          height: 20vh;
+        }
+      }
     }
     .project__description{
       display: flex;

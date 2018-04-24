@@ -18,7 +18,56 @@ function init(){
   // DOM variables
   const $about = $('.about');
   const $chevronDiv = $('#chevronDiv');
-  const $typeItContainer = $('.ti-container')[0];
+  const $projects  = $('.projects > .project');
+  const $lastProjectBtn = $('.projects > .previosBtn');
+  const $nextProjectBtn = $('.projects > .nextBtn');
+
+  // Other variables
+
+  let currentProject = 0;
+
+  console.log($projects);
+  console.log($lastProjectBtn);
+  console.log($chevronDiv);
+  console.log($nextProjectBtn);
+
+  function lastProject() {
+    if (currentProject === 0) {
+      // hide the current project
+      $projects[currentProject].classList.add('hidden');
+      console.log(`${$projects[currentProject]} is now hidden`);
+      // change currentProject counter and show last project
+      currentProject = $projects.length - 1;
+      $projects[currentProject].classList.remove('hidden');
+      console.log(`${$projects[currentProject]} is now shown`);
+    } else {
+      $projects[currentProject].classList.add('hidden');
+      console.log(`${$projects[currentProject]} is now hidden`);
+      // change currentProject counter and show previous project
+      currentProject --;
+      $projects[currentProject].classList.remove('hidden');
+      console.log(`${$projects[currentProject]} is now shown`);
+    }
+  }
+
+  function nextProject() {
+    if (currentProject === $projects.length - 1) {
+      // hide the current project
+      $projects[currentProject].classList.add('hidden');
+      console.log(`${$projects[currentProject]} is now hidden`);
+      // change currentProject counter and show last project
+      currentProject = 0;
+      $projects[currentProject].classList.remove('hidden');
+      console.log(`${$projects[currentProject]} is now shown`);
+    } else {
+      $projects[currentProject].classList.add('hidden');
+      console.log(`${$projects[currentProject]} is now hidden`);
+      // change currentProject counter and show previous project
+      currentProject ++;
+      $projects[currentProject].classList.remove('hidden');
+      console.log(`${$projects[currentProject]} is now shown`);
+    }
+  }
 
   function scrollToAbout()  {
     console.log('moving down');
@@ -28,5 +77,7 @@ function init(){
   }
 
   $chevronDiv.on('click',scrollToAbout );
+  $lastProjectBtn.on('click',lastProject );
+  $nextProjectBtn.on('click',nextProject );
 
 }

@@ -110,6 +110,16 @@ nav {
 .projects {
   display: flex;
   align-items: center; }
+  .projects .previosBtn {
+    padding-left: 25px; }
+  .projects .nextBtn {
+    padding-right: 25px; }
+  .projects svg {
+    font-size: 3rem; }
+    .projects svg .fa-chevron-left {
+      float: left; }
+    .projects svg .fa-chevron-right {
+      float: right; }
   .projects .project {
     width: 100%;
     height: 100%;
@@ -118,9 +128,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem; }
-    .projects .project .project__image {
-      height: 60%;
-      width: auto; }
+    .projects .project a {
+      text-decoration: none; }
+      .projects .project a img {
+        height: 50vh;
+        width: auto; }
+        @media (max-width: 899px) {
+          .projects .project a img {
+            height: 30vh; } }
+        @media (max-width: 599px) {
+          .projects .project a img {
+            height: 20vh; } }
     .projects .project .project__description {
       display: flex;
       flex-direction: column;
