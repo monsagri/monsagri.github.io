@@ -33,79 +33,100 @@ nav {
   .hero header h1 {
     font-size: 4rem;
     font-weight: bold; }
+    @media (max-width: 599px) {
+      .hero header h1 {
+        font-size: 3rem; } }
   .hero header h2 {
     font-size: 2.5rem; }
+    @media (max-width: 599px) {
+      .hero header h2 {
+        font-size: 1.5rem; } }
   .hero .chevronDiv {
     position: relative;
     top: 20vh;
     cursor: pointer; }
     .hero .chevronDiv svg {
       font-size: 3rem; }
+      @media (max-width: 599px) {
+        .hero .chevronDiv svg {
+          font-size: 1.5rem; } }
 
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   border-top: 0.15rem #2D3142 solid;
-  overflow: scroll; }
-  .about .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .about .about-container .about-container__picture {
-      background-image: url("../assets/images/monsagri-min_scaled.jpg");
-      background-size: cover;
-      width: 300px;
-      height: 400px;
-      border-radius: 50%; }
-      @media (max-width: 599px) {
-        .about .about-container .about-container__picture {
-          width: 100px;
-          height: 125px; } }
-    .about .about-container h2 {
-      font-size: 2.5rem;
-      font-weight: bold; }
+  height: 100vh;
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem; }
+  @media (min-width: 1800px) {
+    .about {
+      font-size: 2rem; } }
+  @media (max-width: 899px) {
+    .about {
+      font-size: 1.25rem; } }
+  @media (max-width: 599px) {
+    .about {
+      height: auto;
+      font-size: 0.75rem; } }
+  .about .about__picture {
+    background-image: url("../assets/images/monsagri-min_scaled.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    border-radius: 50%; }
+    @media (max-width: 599px) {
+      .about .about__picture {
+        width: 100px;
+        height: 125px; } }
+  .about h2 {
+    font-size: 2.5rem;
+    font-weight: bold; }
 
 .skills {
   background-image: url("../assets/images/hero5.jpg");
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
   border-top: 0.15rem #2D3142 solid;
   overflow: hidden; }
-  .skills .skills-container h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem; }
-    @media (max-width: 599px) {
-      .skills .skills-container h2 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem; } }
-  .skills .skills-container div {
+  .skills .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start; }
-    .skills .skills-container div h2 {
-      font-size: 2.5rem;
-      flex-basis: 100%;
-      margin-bottom: 1.5rem; }
+    flex-direction: column;
+    justify-content: space-around; }
+    .skills .skills-container h2 {
+      font-size: 3rem;
+      font-weight: bold; }
       @media (max-width: 599px) {
-        .skills .skills-container div h2 {
-          font-size: 1.5rem;
-          margin-bottom: 0.5rem; } }
-    .skills .skills-container div i {
-      font-size: 5rem;
-      flex-basis: 33%;
-      margin-bottom: 1rem; }
-      @media (max-width: 599px) {
-        .skills .skills-container div i {
-          font-size: 2.5rem;
-          margin-bottom: 0.5rem; } }
-      @media (max-width: 899px) {
-        .skills .skills-container div i {
-          font-size: 3.5rem;
-          margin-bottom: 0.75rem; } }
+        .skills .skills-container h2 {
+          font-size: 2rem; } }
+    .skills .skills-container div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start; }
+      .skills .skills-container div h2 {
+        font-size: 2.5rem;
+        flex-basis: 100%; }
+        @media (max-width: 899px) {
+          .skills .skills-container div h2 {
+            font-size: 2rem; } }
+        @media (max-width: 599px) {
+          .skills .skills-container div h2 {
+            font-size: 1.5rem; } }
+      .skills .skills-container div i {
+        font-size: 5rem;
+        flex-basis: 33%;
+        margin-bottom: 1rem; }
+        @media (max-width: 899px) {
+          .skills .skills-container div i {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem; } }
+        @media (max-width: 599px) {
+          .skills .skills-container div i {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem; } }
 
 .projects {
   display: flex;
