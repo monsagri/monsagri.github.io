@@ -155,14 +155,25 @@ nav {
 .projects {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   .previosBtn {
     padding-left: 25px;
+    @include for-phone-only {
+      padding-left: 0px;
+    }
   }
   .nextBtn {
     padding-right: 25px;
+    @include for-phone-only {
+      padding-right: 0px;
+    }
   }
   svg{
     font-size: 3rem;
+    @include for-phone-only {
+      font-size: 1rem;
+    }
     & .fa-chevron-left {
       float: left;
     }
@@ -178,18 +189,20 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     a {
       text-decoration: none;
 
       img{
         height: 50vh;
         width:auto;
+        margin-top: 1.5rem;
         @include for-tablet-portrait {
           height: 30vh;
         }
         @include for-phone-only {
-          height: 20vh;
+          height: 30vh;
+          margin-top: 0.5rem;
         }
       }
     }
@@ -198,9 +211,16 @@ nav {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      @include for-phone-only {
+        font-size: 0.9rem;
+      }
       h2 {
         font-size: 2rem;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
+        @include for-phone-only {
+          font-size: 1.5rem;
+          margin-bottom: 0.25rem;
+        }
       }
     }
 
@@ -213,12 +233,20 @@ nav {
       h3 {
         flex-basis: 100%;
         font-size: 2rem;
+        @include for-phone-only {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
       }
       i {
         font-size: 2.5rem;
         padding-top: 1rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        @include for-phone-only {
+          font-size: 2rem;
+          padding-top: 0.75rem;
+        }
       }
     }
   }
