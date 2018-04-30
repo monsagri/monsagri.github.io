@@ -3,20 +3,20 @@ body {
   font-family: 'Source Code Pro', monospace; }
 
 nav {
-  background-color: #0d1c4f;
+  background-color: #e0dfd5;
   color: #ff4b19;
   height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   nav .nav-logo {
-    margin-left: 2rem; }
-    nav .nav-logo a {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: #ff4b19; }
+    background-image: url(../assets/images/monsagri.png);
+    background-size: cover;
+    margin-left: 2rem;
+    height: 100%;
+    width: 50px; }
   nav .nav-menu {
+    margin-right: 2rem;
     display: flex; }
     nav .nav-menu .nav-menu__item {
       padding: 0.5rem;
