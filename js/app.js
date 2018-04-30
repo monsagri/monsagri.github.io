@@ -20,7 +20,7 @@ function init(){
   new TypeIt('.hero-header__me', {
     speed: 100,
     deleteSpeed: 80
-  }).pause(19000).type('is Fabian Feldberg');
+  }).pause(21000).type('is Fabian Feldberg');
 
   // DOM variables
   const $about = $('.about');
