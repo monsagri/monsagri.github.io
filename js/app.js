@@ -15,7 +15,7 @@ function init(){
     loop: true,
     speed: 100,
     deleteSpeed: 80
-  }).type('Full Stack Web Developer').pause(1000).delete().type('Cyclist').pause(1000).delete().type('Failed Professional Dungeon Master').pause(1000).delete().type('Unrepentant Nerd').pause(1000).delete().type('Beer Enthusiast');
+  }).type('Full Stack Web Developer').pause(1000).delete().type('Cyclist').pause(1000).delete().type('Failed Professional Dungeon Master').pause(1000).delete().type('Unrepentant Nerd').pause(1000).delete().type('Beer Enthusiast').pause(1000).destroy(true);
 
   new TypeIt('.hero-header__me', {
     speed: 100,
